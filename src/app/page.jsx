@@ -135,7 +135,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className={`w-[70%] h-[95px ]  flex justify-center items-center flex-wrap gap-20 animate-slide-in max-460:gap-8 max-460:mt-2  max-770:gap-[12px] ${ isVisible ? "animate-slide-in2 opacity-100" : "opacity-0"}`}>
+          <div className={`w-[70%] h-[95px ]  flex justify-center items-center flex-wrap gap-20 animate-slide-in max-460:gap-8 max-460:mt-2  max-770:gap-[12px] max-1025:gap-8 ${ isVisible ? "animate-slide-in2 opacity-100" : "opacity-0"}`}>
             <Image className="w-[50px] h-[50px]" src={next} alt="next" />
             <Image className="w-[50px] h-[50px]" src={js} alt="js" />
             <Image className="w-[50px] h-[50px]" src={react} alt="react" />
