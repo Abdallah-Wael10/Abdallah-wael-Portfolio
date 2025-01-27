@@ -11,6 +11,26 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      screens: {
+        'max-1025':{ max: '1025px' }, 
+        'max-770': { max: '770px' }, 
+        'max-460': { max: '460px' }, 
+        'max-330': { max: '330px' }, 
+      },
+      keyframes: {
+        slideIn: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' }, // From left to right
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideIn2: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' }, // From right to left
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+      },
+      animation: {
+        'slide-in': 'slideIn 1.5s ease-in-out', // Define first animation (left to right)
+        'slide-in2': 'slideIn2 1.5s ease-in-out', // Define second animation (right to left)
+      },
     },
   },
   plugins: [],
