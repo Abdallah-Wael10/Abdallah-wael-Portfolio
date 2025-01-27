@@ -89,7 +89,7 @@ const Nav = () => {
         </a>
         <a
           href="#hire-me"
-          className="animate-bounce w-[22%] h-[38px] rounded-[40px] hover:text-[#5AA7FF]   transition-all duration-700 bg-white text-[#5AA7FF] px-6 py-2 "
+          className="animate-bounce w-[25%] h-[38px] rounded-[40px] hover:text-[#5AA7FF]   transition-all duration-700 bg-white text-[#5AA7FF] px-6 py-2 "
           onClick={toggleMenu}
         >
           Hire Me
