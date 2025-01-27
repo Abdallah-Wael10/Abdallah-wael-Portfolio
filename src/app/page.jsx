@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect,useState, useRef } from "react";
 import Typed from "typed.js";
 import Nav from "./componant/nav/page";
 import bedo from "./images/bedoo.png";
@@ -19,6 +19,31 @@ import Contact from "./componant/contact/page";
 import Footer from "./componant/footer/page";
 
 export default function Home() {
+      const [isVisible, setIsVisible] = useState(false);
+      const skillsref = useRef(null);
+    
+      useEffect(() => {
+        const observer = new IntersectionObserver(
+          ([entry]) => {
+            if (entry.isIntersecting) {
+              setIsVisible(true);
+            }
+          },
+          {
+            threshold: 0.1, // Trigger when 10% of the component is visible
+          }
+        );
+    
+        if (skillsref.current) {
+          observer.observe(skillsref.current);
+        }
+    
+        return () => {
+          if (skillsref.current) {
+            observer.unobserve(skillsref.current);
+          }
+        };
+      }, []);
   const mainHeadingRef = useRef(null);
   const subHeadingRef = useRef(null);
 
@@ -97,7 +122,8 @@ export default function Home() {
         </div>
         <div
           id="skills"
-          className="w-full h-[95px] bg-black flex max-460:flex-col max-460:h-max max-460:justify-center max-460:items-center max-460:pb-3 max-1025:gap-[35px]"
+          ref={skillsref}
+          className={`w-full h-[95px] bg-black flex max-460:flex-col max-460:h-max max-460:justify-center max-460:items-center max-460:pb-3 max-1025:gap-[35px] `}
         >
           <div className="w-[30%] h-[95px]  flex justify-center items-center max-460:w-full">
             <div className="w-[60%%] h-[90px] flex justify-center items-center animate-slide-in2 max-460:w-[75%] ">
@@ -109,7 +135,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-          <div className="w-[70%] h-[95px ]  flex justify-center items-center flex-wrap gap-20 animate-slide-in max-460:gap-8 max-460:mt-2  max-770:gap-[12px]">
+          <div className={`w-[70%] h-[95px ]  flex justify-center items-center flex-wrap gap-20 animate-slide-in max-460:gap-8 max-460:mt-2  max-770:gap-[12px] ${ isVisible ? "animate-slide-in2 opacity-100" : "opacity-0"}`}>
             <Image className="w-[50px] h-[50px]" src={next} alt="next" />
             <Image className="w-[50px] h-[50px]" src={js} alt="js" />
             <Image className="w-[50px] h-[50px]" src={react} alt="react" />
