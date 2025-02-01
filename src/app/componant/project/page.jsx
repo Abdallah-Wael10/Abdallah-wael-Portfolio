@@ -7,18 +7,19 @@ import realstate from "./images/realstate.jpg"
 import hyber from "./images/hyber.jpg"
 const Project = () => {
     const data = [
+      {title: "Devfux" ,
+        desc: "I worked on a real project for Devfux Agency using Next.js and Tailwind CSS , express.js and mongodb (if you need to login as admin url/admin/login {admin@example.com , adminadmin12}) It's fully responsive on all devices, and the agency builds websites for clients. I learned a lot about working with JWT, cookies, and authentication ",
+        image: Devfux,
+        github: "https://github.com/Abdallah-Wael10/devfux-frontend",
+        live: "https://devfux-frontend.vercel.app/"
+        },
         {title: "Mini CRM" ,
         desc: "I worked on a real CRM project for a car protection company using Next.js and CSS. It helped me understand how a CRM works, how it supports sales teams, and streamlines company processes. I also made sure its fully responsive across all devices.",
         image: crm,
         github: "https://github.com/Abdallah-Wael10/front-end-crm",
         live: "https://github.com/Abdallah-Wael10/front-end-crm"
         },
-        {title: "Devfux" ,
-        desc: "I worked on a real project for Devfux Agency using Next.js and Tailwind CSS. It's fully responsive on all devices, and the agency builds websites for clients. I learned a lot about working with JWT, cookies, and authentication ",
-        image: Devfux,
-        github: "https://github.com/Abdallah-Wael10/front-end-crm",
-        live: "https://github.com/Abdallah-Wael10/front-end-crm"
-        },
+      
         {title: "Burger Maker" ,
         desc: "I worked on a Burger Maker app using pure JavaScript, and it’s fully responsive on phones. I created it to strengthen my JavaScript skills as much as possible. It helped me understand the DOM, BOM, and JavaScript basics more deeply. ",
         image: burger,
