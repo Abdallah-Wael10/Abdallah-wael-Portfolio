@@ -98,7 +98,7 @@ export default function Home() {
           </div>
 
           {/* Right Section */}
-          <div className="w-1/2 h-[600px] flex flex-col justify-center items-center pb-20 animate-slide-in2 max-460:w-full">
+          <div className="w-1/2 h-[600px] flex flex-col justify-center items-center pb-20 animate-slide-in max-460:w-full">
             <div className="w-[300px] h-[300px] relative group">
               {/* Default Image */}
               <Image

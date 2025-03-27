@@ -5,13 +5,48 @@ import Devfux from "./images/devfux.jpg"
 import burger from "./images/burger.jpg"
 import realstate from "./images/realstate.jpg"
 import hyber from "./images/hyber.jpg"
+import powercem1 from "./images/powercembg.jpg"
+import adam from "./images/adambg.jpg"
+import bedo from "./images/bedobg.jpg"
+import sneek from "./images/sneekbg.jpg"
+import powercem2 from "./images/powercembg2.jpg"
 const Project = () => {
     const data = [
-      {title: "Devfux" ,
-        desc: "I worked on a real project for Devfux Agency using Next.js and Tailwind CSS , express.js and mongodb (if you need to login as admin url/admin/login {admin@example.com , adminadmin12}) It's fully responsive on all devices, and the agency builds websites for clients. I learned a lot about working with JWT, cookies, and authentication ",
+      {title: "Powercem Frontend" ,
+        desc: "I worked on a real project in EgyWeb company Internship as Full stack dev  for Powercem Agency using Next.js and Tailwind CSS , its fully dynamic data and responsive on all devices ",
+        image: powercem1,
+        github: "https://github.com/Abdallah-Wael10/Powercem-frontend",
+        live: "https://powercem.vercel.app/"
+        },
+      {title: "Devfux Frontend" ,
+        desc: "I worked on a real project for Devfux Agency using Next.js and Tailwind CSS , (if you need to login as admin url/admin/login {admin@example.com , adminadmin12}) It's fully responsive on all devices, and the agency builds websites for clients. I learned a lot about working with JWT, cookies, and authentication ",
         image: Devfux,
         github: "https://github.com/Abdallah-Wael10/devfux-frontend",
         live: "https://devfux-frontend.vercel.app/"
+        },
+        {title: "Powercem Backend" ,
+          desc: "I worked on a real project in EgyWeb company Internship as Full stack dev for Powercem Agency using express.js and mongodb , its fully dynamic data ",
+          image: powercem2,
+          github: "https://github.com/Abdallah-Wael10/Powercem-backend",
+          live: "powercem-backend-production.up.railway.app"
+          },
+        {title: "Adam wael Portfolio",
+          desc: "I worked on a real project for Adam wael Portfolio using Next.js and Tailwind CSS , its Fully responsive  its portfolio to get client and show his skills ",
+          image: adam,
+          github: "https://github.com/Abdallah-Wael10/Adam-wael-Portfolio",
+          live: "https://adamwael-portfolio.vercel.app/"
+          },
+        {title: "Abdallah wael Portfolio",
+          desc: "I worked on a real project for Abdallah wael Portfolio using Next.js and Tailwind CSS , its Fully responsive  its portfolio to get client and show his skills ",
+          image: bedo,
+          github: "https://github.com/Abdallah-Wael10/Abdallah-wael-Portfolio",
+          live: "https://abdallah-wael-portfolio.vercel.app/"
+          },
+      {title: "Devfux Backend" ,
+        desc: "I worked on a real project for Devfux Agency using express.js and mongodb  , the agency builds websites for clients. I learned a lot about working with JWT, cookies, and authentication ",
+        image: Devfux,
+        github: "https://github.com/Abdallah-Wael10/devfux-backend",
+        live: "devfux-backend-production.up.railway.app"
         },
         {title: "Mini CRM" ,
         desc: "I worked on a real CRM project for a car protection company using Next.js and CSS. It helped me understand how a CRM works, how it supports sales teams, and streamlines company processes. I also made sure its fully responsive across all devices.",
@@ -27,10 +62,16 @@ const Project = () => {
         live: "https://burger-maker-pure-javascriptt-ewx5eic13.vercel.app/"
         },
         {title: " Realstate Landing page" ,
-        desc: "I created a real estate landing page using Next.js and Tailwind CSS. The page is simple yet effective, featuring a dedicated [advertising] section to showcase promotions. It's a clean and functional design tailored for property listings ",
+        desc: "I created a real estate landing page using Next.js and Tailwind CSS. The page is simple yet effective, featuring a dedicated [advertising] section to showcase promotions. It's a clean and functional design tailored for property listings only-responsive-on-mobile ",
         image: realstate,
-        github: "https://github.com/Abdallah-Wael10/Burger-Maker-Javascript",
-        live: "https://burger-maker-pure-javascriptt-ewx5eic13.vercel.app/"
+        github: "https://github.com/Abdallah-Wael10/Realstate-with-ads-landing-page-resp-on-mobile",
+        live: "https://realstate-with-ads-landing-page-resp-on-mobile.vercel.app/"
+        },
+        {title: " Sneakers Landing page" ,
+        desc: "I created a Sneakers landing page using Next.js and Tailwind CSS. The page is simple yet effective, It's a clean and functional design Sneakers shoes only-responsive-on-mobile",
+        image: sneek,
+        github: "https://github.com/Abdallah-Wael10/Sneakers-Landing-Page-only-responsive-on-mobile-",
+        live: "https://sneakers-landing-page-only-responsive-on-mobile.vercel.app/"
         },
         {title: "Hyber Auto" ,
         desc: "I worked on Hyper Auto, a platform built with Next.js and CSS for a company that buys and sells cars. It features a well-designed, responsive dashboard and was my first real project, giving me hands-on experience with creating functional and user-friendly applications ",
