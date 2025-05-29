@@ -23,10 +23,14 @@ const ErrorCard = () => {
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
           Server Error
         </h2>
-        
-        <p className="text-gray-600 text-center mb-8">
+        <p className="text-red-600 text-center mb-8">
           The Railway trial server has ended. We are currently working on resolving this issue.
         </p>
+                <p className="text-gray-500 text-center mb-8">
+  you can still view the code on GitHub, but the live demo is temporarily unavailable for now
+        </p>
+        
+          
         
         <div className="flex justify-center">
           <Link href="/" className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-medium transform hover:scale-105 transition-all duration-200 active:scale-95">
