@@ -3,9 +3,11 @@ import React, { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 import live from './image/live.svg'; // Live demo icon
 import github from './image/github.svg'; // GitHub icon
-
+import ErrorCard from '../errorCard/page';
 const Card = ({ image, title, desc, githubb, livee }) => {
   const [isVisible, setIsVisible] = useState(false);
+    const [showError, setShowError] = useState(false);
+
   const cardRef = useRef(null);
 
   useEffect(() => {
@@ -30,6 +32,14 @@ const Card = ({ image, title, desc, githubb, livee }) => {
       }
     };
   }, []);
+  const handleLiveClick = (e) => {
+    e.preventDefault();
+    setShowError(true);
+  };
+
+  if (showError) {
+    return <ErrorCard />;
+  }
 
   return (
     <div
@@ -64,14 +74,22 @@ const Card = ({ image, title, desc, githubb, livee }) => {
             View Code
           </a>
           {/* Live Demo Button */}
-          <a
+          {/* <a
             href={livee}
+
             target="_blank"
             className="flex items-center justify-center w-28 h-10 bg-blue-100 rounded-lg text-sm text-blue-500 hover:bg-blue-200 transition duration-200"
           >
             <Image src={live} alt="Live demo icon" width={24} height={24} className="mr-2" />
             Live Demo
-          </a>
+          </a> */}
+             <button
+            onClick={handleLiveClick}
+            className="flex items-center justify-center w-28 h-10 bg-blue-100 rounded-lg text-sm text-blue-500 hover:bg-blue-200 transition duration-200"
+          >
+            <Image src={live} alt="Live demo icon" width={24} height={24} className="mr-2" />
+            Live Demo
+          </button>
         </div>
       </div>
     </div>

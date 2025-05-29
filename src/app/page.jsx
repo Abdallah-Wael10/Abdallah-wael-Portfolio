@@ -17,6 +17,7 @@ import About from "./componant/aboutme/page";
 import Project from "./componant/project/page";
 import Contact from "./componant/contact/page";
 import Footer from "./componant/footer/page";
+import ErrorCard from "./componant/errorCard/page";
 
 export default function Home() {
       const [isVisible, setIsVisible] = useState(false);
