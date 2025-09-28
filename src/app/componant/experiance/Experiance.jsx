@@ -25,10 +25,13 @@ const Experience = () => {
       category: "current",
       description: "Currently working as a full-time Frontend Developer, specializing in React.js and Next.js applications. Contributing to chatbot campaigns, landing pages, and innovative user interfaces. Also providing backend support with Node.js when required.",
       achievements: [
-        "Developed interactive chatbot campaign systems",
-        "Built responsive landing pages with modern UI/UX",
-        "Collaborated with cross-functional teams on product development",
-        "Provided Node.js backend support when needed"
+        "Developed comprehensive HR management system (Workhole HRM) with employee management, payroll, and reporting modules",
+        "Built advanced CRM systems with customer relationship tracking, sales pipeline management, and analytics dashboards",
+        "Created interactive chatbot campaign systems with AI-powered customer engagement and lead generation",
+        "Designed and developed responsive landing pages with modern UI/UX and conversion optimization",
+        "Built comprehensive admin dashboards with real-time analytics, data visualization, and reporting features",
+        "Collaborated with cross-functional teams on product development and agile methodologies",
+        "Provided Node.js backend support and API integration for various client projects"
       ],
       technologies: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Material UI", "Node.js", "JavaScript", "Nest.js"],
       color: "from-blue-600 to-cyan-600",
@@ -47,7 +50,7 @@ const Experience = () => {
       category: "internship",
       description: "Worked as a Full-Stack Developer intern, building a fully dynamic website using Next.js and Tailwind CSS for the frontend, with Express.js and MongoDB for the backend. Gained extensive experience in full-stack development and API integration.",
       achievements: [
-        "Built complete full-stack web applications from scratch",
+       "Built complete full-stack web applications from scratch",
         "Developed RESTful APIs using Express.js and MongoDB",
         "Implemented dynamic content management systems",
         "Collaborated with senior developers on real client projects",
@@ -98,7 +101,7 @@ const Experience = () => {
         "Maintained long-term client relationships with 100% satisfaction rate",
         "Managed projects from concept to deployment"
       ],
-      technologies: ["Next.js", "React.js", "Node.js", "Express.js", "Nest.js", "MongoDB", "PostgreSQL", "Tailwind CSS"],
+      technologies: ["Next.js", "React.js", "Node.js", "Express.js", "Nest.js", "MongoDB", "Tailwind CSS"],
       color: "from-orange-600 to-red-600",
       bgColor: "from-orange-50 to-red-50",
       iconColor: "text-orange-600"
@@ -106,10 +109,10 @@ const Experience = () => {
   ];
 
   const filters = [
-    { key: 'all', label: 'All Experience', icon: '🎯' },
-    { key: 'current', label: 'Current Role', icon: '🚀' },
-    { key: 'internship', label: 'Internships', icon: '🎓' },
-    { key: 'freelance', label: 'Freelance', icon: '💼' }
+    { key: 'all', label: 'All Experience' },
+    { key: 'current', label: 'Current Role' },
+    { key: 'internship', label: 'Internships' },
+    { key: 'freelance', label: 'Freelance' }
   ];
 
   const filteredData = activeFilter === 'all' 
@@ -125,7 +128,10 @@ const Experience = () => {
           }
         });
       },
-      { threshold: 0.1 }
+      { 
+        threshold: 0.1,
+        rootMargin: '50px'
+      }
     );
 
     return () => {
@@ -134,6 +140,11 @@ const Experience = () => {
       }
     };
   }, []);
+
+  // Reset visible items when filter changes
+  useEffect(() => {
+    setVisibleItems(new Set());
+  }, [activeFilter]);
 
   const ExperienceCard = ({ experience, index }) => {
     const cardRef = useRef(null);
@@ -151,7 +162,7 @@ const Experience = () => {
       <div
         ref={cardRef}
         data-id={experience.id}
-        className={`relative transition-all duration-1000 ${
+        className={`relative transition-all duration-1000 ease-out ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
         }`}
         style={{ transitionDelay: `${index * 0.15}s` }}
@@ -423,7 +434,6 @@ const Experience = () => {
                     : 'bg-white/80 text-gray-700 hover:bg-white border border-gray-200 hover:shadow-lg'
                 }`}
               >
-                <span className="mr-1 sm:mr-2">{filter.icon}</span>
                 <span className="hidden xs:inline sm:inline">{filter.label}</span>
                 <span className="xs:hidden sm:hidden">{filter.label.split(' ')[0]}</span>
               </button>
