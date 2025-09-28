@@ -198,11 +198,11 @@ const Experience = () => {
             }`}></div>
 
             {/* Header with Enhanced Design */}
-            <div className={`relative bg-gradient-to-r ${experience.color} p-8 text-white overflow-hidden`}>
+            <div className={`relative bg-gradient-to-br from-gray-900 via-gray-800 to-black p-8 text-white overflow-hidden`}>
               {/* Background Pattern */}
               <div className="absolute inset-0 bg-dots-pattern opacity-20"></div>
               
-              {/* Floating Orbs */}
+              {/* Floating Orbs with adjusted colors for dark background */}
               <div className={`absolute -top-4 -right-4 w-24 h-24 bg-white/10 rounded-full transition-transform duration-700 ${
                 isHovered ? 'scale-125 rotate-45' : ''
               }`}></div>

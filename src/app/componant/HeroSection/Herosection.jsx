@@ -219,22 +219,22 @@ const Herosection = () => {
                              border border-gray-200 overflow-hidden transition-all duration-300 
                              hover:shadow-2xl hover:scale-105 hover:-translate-y-1 w-full sm:w-auto'>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-              <span className="relative flex items-center justify-center gap-2 z-10">
+              <a href="https://github.com/Abdallah-Wael10" target="_blank" className="relative flex items-center justify-center gap-2 z-10">
                 <Image src={github} alt="GitHub" width={20} height={20} className="sm:w-6 sm:h-6 transition-transform duration-300 group-hover:rotate-12" />
                 <span className="group-hover:text-blue-600 transition-colors duration-300">GitHub</span>
-              </span>
+              </a>
             </button>
             
             <button className='group relative px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-base sm:text-lg font-semibold 
                              rounded-2xl shadow-md overflow-hidden transition-all duration-300 
                              hover:shadow-2xl hover:scale-105 hover:-translate-y-1 w-full sm:w-auto'>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className="relative flex items-center justify-center gap-2 z-10">
+              <a href="#contact" className="relative flex items-center justify-center gap-2 z-10">
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
                 <span className="group-hover:scale-105 transition-transform duration-300">Book Meeting</span>
-              </span>
+              </a>
             </button>
           </div>
         </div>
