@@ -23,7 +23,7 @@ const Experience = () => {
       location: "Office",
       logo: Cultiv,
       category: "current",
-      description: "Currently working as a full-time Frontend Developer, specializing in React.js and Next.js applications. Contributing to chatbot campaigns, landing pages, and innovative user interfaces. Also providing backend support with Node.js when required.",
+      description: "Currently working as a full-time Frontend Developer, specializing in React.js and Next.js applications. Contributing to systems , campaigns, landing pages, and innovative user interfaces. Also providing backend support with Node.js when required.",
       achievements: [
         "Developed comprehensive HR management system (Workhole HRM) with employee management, payroll, and reporting modules",
         "Built advanced CRM systems with customer relationship tracking, sales pipeline management, and analytics dashboards",
