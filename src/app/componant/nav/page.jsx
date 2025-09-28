@@ -98,11 +98,11 @@ const Nav = () => {
   }, [isOpen, showImageModal]);
 
   const navItems = [
-    { href: "#home", label: "Home", icon: "" },
-    { href: "#about", label: "About", icon: "" },
-    { href: "#projects", label: "Projects", icon: "" },
-    { href: "#experience", label: "Experience", icon: "" },
-    { href: "#contact", label: "Contact", icon: "" },
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#projects", label: "Projects" },
+    { href: "#experience", label: "Experience" },
+    { href: "#contact", label: "Contact" },
   ];
 
   const handleNavClick = (href) => {
@@ -317,12 +317,6 @@ const Nav = () => {
                   `}
                   style={{ transitionDelay: `${index * 50}ms` }}
                 >
-                  <span className={`
-                    text-2xl mr-5 transition-all duration-300
-                    ${activeSection === item.href.slice(1) ? 'scale-110' : 'group-hover:scale-110'}
-                  `}>
-                    {item.icon}
-                  </span>
                   <span className="flex-1">{item.label}</span>
                   <svg 
                     className={`
