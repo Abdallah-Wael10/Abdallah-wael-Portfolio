@@ -11,6 +11,7 @@ import Contact from "./componant/contact/page";
 import Footer from "./componant/footer/page";
 import ErrorCard from "./componant/errorCard/page"; 
 import Herosection from "./componant/HeroSection/Herosection";
+import Experiance from "./componant/experiance/Experiance";
 
 export default function Home() {
       const [isVisible, setIsVisible] = useState(false);
@@ -77,9 +78,10 @@ export default function Home() {
         <Herosection />
        </div>
         <About />
+        <Experiance />
         <Project />
-        {/* <Contact />
-        <Footer /> */}
+        <Contact />
+        <Footer />
       </div>
     </div>
   );

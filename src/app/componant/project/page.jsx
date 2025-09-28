@@ -411,46 +411,7 @@ const Project = () => {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <div className="w-full max-w-4xl mx-auto px-4 mb-20">
-          <div className="relative overflow-hidden bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-12 text-center shadow-2xl">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0 bg-dots-pattern"></div>
-            </div>
-            
-            <div className="relative z-10">
-              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                Ready to Start Your Project?
-              </h3>
-              <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                Let&apos;s collaborate and bring your vision to life with cutting-edge technology and innovative solutions.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="#contact" 
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-indigo-600 rounded-2xl font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-200 shadow-xl"
-                >
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                  </svg>
-                  Let&apos;s Talk
-                </a>
-                
-                <a 
-                  href="mailto:abdallahwael844@gmail.com" 
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white/10 text-white rounded-2xl font-semibold hover:bg-white/20 backdrop-blur-sm transition-all duration-200 border border-white/20"
-                >
-                  <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  Send Email
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   );
