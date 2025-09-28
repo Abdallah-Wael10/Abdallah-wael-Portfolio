@@ -138,8 +138,9 @@ const Card = ({ image, title, desc, githubb, livee, status, tech = [], featured 
           <Image 
             src={image} 
             alt={`${title} project screenshot`} 
-            layout="fill" 
-            objectFit="cover" 
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ objectFit: 'cover' }}
             className={`transition-all duration-700 ${isHovered ? 'scale-110' : 'scale-100'}`}
           />
           

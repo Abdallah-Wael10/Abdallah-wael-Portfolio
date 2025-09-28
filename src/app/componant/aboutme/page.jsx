@@ -165,7 +165,6 @@ const About = () => {
                   </div>
                 </div>
 
-
               </div>
             </div>
           </div>
@@ -188,15 +187,12 @@ const About = () => {
                     className='w-full h-auto transform group-hover:scale-105 transition-transform duration-700 ease-out'
                     width={600}
                     height={400}
+                    style={{ width: '100%', height: 'auto' }}
                   />
                   
                   {/* Overlay gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 via-transparent to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
-                
-
-                
-
               </div>
             </div>
           </div>
@@ -244,6 +240,7 @@ const About = () => {
                       alt={tech.alt} 
                       width={40} 
                       height={40}
+                      style={{ width: 'auto', height: 'auto' }}
                       className="transition-all duration-500"
                     />
                   </div>
@@ -259,8 +256,6 @@ const About = () => {
                       {tech.category}
                     </p>
                   </div>
-
-
                 </div>
 
                 {/* Hover border effect */}
@@ -271,7 +266,6 @@ const About = () => {
             ))}
           </div>
         </div>
-
 
       </div>
     </section>

@@ -85,7 +85,7 @@ const Herosection = () => {
               transform: `translate(${mousePosition.x * 0.5}px, ${mousePosition.y * 0.5}px)` 
             }}
           >
-            <Image src={mongo} alt="MongoDB" width={32} height={32} className="transition-transform duration-300 group-hover:rotate-12" />
+            <Image src={mongo} alt="MongoDB" width={32} height={32} style={{ width: 'auto', height: 'auto' }} className="transition-transform duration-300 group-hover:rotate-12" />
             <div className="absolute -inset-1 bg-gradient-to-r from-green-400 to-green-600 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </div>
           
@@ -99,7 +99,7 @@ const Herosection = () => {
               transform: `translate(${mousePosition.x * -0.3}px, ${mousePosition.y * 0.3}px)` 
             }}
           >
-            <Image src={redux} alt="Redux" width={32} height={32} className="transition-transform duration-300 group-hover:-rotate-12" />
+            <Image src={redux} alt="Redux" width={32} height={32} style={{ width: 'auto', height: 'auto' }} className="transition-transform duration-300 group-hover:-rotate-12" />
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </div>
           
@@ -113,7 +113,7 @@ const Herosection = () => {
               transform: `translate(${mousePosition.x * 0.4}px, ${mousePosition.y * 0.2}px)` 
             }}
           >
-            <Image src={tailwind} alt="Tailwind" width={32} height={32} className="transition-transform duration-300 group-hover:rotate-6" />
+            <Image src={tailwind} alt="Tailwind" width={32} height={32} style={{ width: 'auto', height: 'auto' }} className="transition-transform duration-300 group-hover:rotate-6" />
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-600 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </div>
           
@@ -127,7 +127,7 @@ const Herosection = () => {
               transform: `translate(${mousePosition.x * -0.4}px, ${mousePosition.y * 0.2}px)` 
             }}
           >
-            <Image src={react} alt="React" width={32} height={32} className="transition-transform duration-300 group-hover:rotate-180" />
+            <Image src={react} alt="React" width={32} height={32} style={{ width: 'auto', height: 'auto' }} className="transition-transform duration-300 group-hover:rotate-180" />
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-400 to-cyan-600 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </div>
           
@@ -141,7 +141,7 @@ const Herosection = () => {
               transform: `translate(${mousePosition.x * 0.3}px, ${mousePosition.y * -0.3}px)` 
             }}
           >
-            <Image src={express} alt="Express" width={32} height={32} className="transition-transform duration-300 group-hover:-rotate-6" />
+            <Image src={express} alt="Express" width={32} height={32} style={{ width: 'auto', height: 'auto' }} className="transition-transform duration-300 group-hover:-rotate-6" />
             <div className="absolute -inset-1 bg-gradient-to-r from-gray-400 to-gray-600 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </div>
           
@@ -155,7 +155,7 @@ const Herosection = () => {
               transform: `translate(${mousePosition.x * -0.3}px, ${mousePosition.y * -0.2}px)` 
             }}
           >
-            <Image src={js} alt="JavaScript" width={32} height={32} className="transition-transform duration-300 group-hover:rotate-12" />
+            <Image src={js} alt="JavaScript" width={32} height={32} style={{ width: 'auto', height: 'auto' }} className="transition-transform duration-300 group-hover:rotate-12" />
             <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </div>
           
@@ -169,7 +169,7 @@ const Herosection = () => {
               transform: `translate(${mousePosition.x * 0.2}px, ${mousePosition.y * -0.4}px)` 
             }}
           >
-            <Image src={next} alt="Next.js" width={32} height={32} className="transition-transform duration-300 group-hover:-rotate-12" />
+            <Image src={next} alt="Next.js" width={32} height={32} style={{ width: 'auto', height: 'auto' }} className="transition-transform duration-300 group-hover:-rotate-12" />
             <div className="absolute -inset-1 bg-gradient-to-r from-black to-gray-700 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </div>
           
@@ -183,19 +183,22 @@ const Herosection = () => {
               transform: `translate(${mousePosition.x * -0.2}px, ${mousePosition.y * -0.4}px)` 
             }}
           >
-            <Image src={nest} alt="NestJS" width={32} height={32} className="transition-transform duration-300 group-hover:rotate-6" />
+            <Image src={nest} alt="NestJS" width={32} height={32} style={{ width: 'auto', height: 'auto' }} className="transition-transform duration-300 group-hover:rotate-6" />
             <div className="absolute -inset-1 bg-gradient-to-r from-red-400 to-red-600 rounded-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </div>
         </div>
 
         {/* Main Text Content with responsive spacing */}
         <div className='relative z-10 w-full max-w-4xl flex flex-col justify-center items-center text-center px-4 sm:px-8 lg:px-16 py-8'>
+          
+          {/* Professional Greeting */}
           <span className={`text-gray-600 text-lg sm:text-xl md:text-2xl font-medium mb-3 sm:mb-4 transition-all duration-1000 ease-out
                            ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
                 style={{ animationDelay: '500ms' }}>
-            Hello There !
+            Welcome to my  portfolio 👋
           </span>
           
+          {/* Enhanced Name and Title */}
           <h1 className={`text-gray-900 text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight transition-all duration-1000 ease-out
                          ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
               style={{ animationDelay: '700ms' }}>
@@ -203,12 +206,30 @@ const Herosection = () => {
               Abdallah Wael
             </span>
           </h1>
+
+          {/* Professional Role Description */}
+          <div className={`mb-4 sm:mb-6 transition-all duration-1000 ease-out
+                          ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+               style={{ animationDelay: '850ms' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Frontend Developer
+              </span>
+            </h2>
+            <p className="text-lg sm:text-xl md:text-2xl text-blue-600 font-semibold">
+              with Solid Backend Understanding
+            </p>
+          </div>
           
-          <p className={`text-gray-500 text-base sm:text-lg md:text-xl font-normal max-w-xs sm:max-w-md lg:max-w-2xl leading-relaxed mb-6 sm:mb-8 transition-all duration-1000 ease-out
+          {/* Professional Description */}
+          <p className={`text-gray-600 text-base sm:text-lg md:text-xl font-light max-w-4xl leading-relaxed mb-6 sm:mb-8 transition-all duration-1000 ease-out
                         ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
              style={{ animationDelay: '900ms' }}>
-            As A Web Developer, I Am Responsible For Designing And Developing web page.
-            My Primary Focus is To Create Responsive, User-Friendly Experiences
+            I specialize in crafting exceptional digital experiences through modern web technologies. 
+            <br className="hidden sm:block" />
+            My expertise spans <span className="font-semibold text-blue-600">React.js, Next.js, TypeScript,</span> and contemporary development practices, 
+            <br className="hidden sm:block" />
+            delivering scalable, user-centered solutions that drive business growth.
           </p>
           
           {/* Action Buttons with responsive sizing */}
@@ -221,7 +242,7 @@ const Herosection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
               <a href="https://github.com/Abdallah-Wael10" target="_blank" className="relative flex items-center justify-center gap-2 z-10">
                 <Image src={github} alt="GitHub" width={20} height={20} className="sm:w-6 sm:h-6 transition-transform duration-300 group-hover:rotate-12" />
-                <span className="group-hover:text-blue-600 transition-colors duration-300">GitHub</span>
+                <span className="group-hover:text-blue-600 transition-colors duration-300">View GitHub</span>
               </a>
             </button>
             
@@ -231,9 +252,9 @@ const Herosection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <a href="#contact" className="relative flex items-center justify-center gap-2 z-10">
                 <svg className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
-                <span className="group-hover:scale-105 transition-transform duration-300">Book Meeting</span>
+                <span className="group-hover:scale-105 transition-transform duration-300">Let's Connect</span>
               </a>
             </button>
           </div>
@@ -247,7 +268,7 @@ const Herosection = () => {
         <div className="w-full max-w-6xl px-2 sm:px-4 group">
           <Image 
             src={HeroSvg} 
-            alt='Professional Dashboard Mockup' 
+            alt='Professional Dashboard Mockup showcasing modern web application design and user interface expertise' 
             className='w-full h-auto drop-shadow-xl sm:drop-shadow-2xl transition-all duration-500 group-hover:drop-shadow-3xl group-hover:scale-105' 
             width={1200} 
             height={800}
