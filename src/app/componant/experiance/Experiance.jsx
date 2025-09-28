@@ -441,12 +441,12 @@ const Experience = () => {
           </div>
 
           {/* Enhanced Stats - Responsive grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
             {[
               { value: "2+", label: "Years Experience", color: "from-blue-600 to-purple-600", icon: "⏱️" },
               { value: "4", label: "Companies", color: "from-green-600 to-emerald-600", icon: "🏢" },
               { value: "15+", label: "Projects", color: "from-orange-600 to-red-600", icon: "🚀" },
-              { value: "100%", label: "Success Rate", color: "from-purple-600 to-pink-600", icon: "🎯" }
+              
             ].map((stat, index) => (
               <div 
                 key={index}
