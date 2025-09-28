@@ -98,11 +98,11 @@ const Nav = () => {
   }, [isOpen, showImageModal]);
 
   const navItems = [
-    { href: "#home", label: "Home", icon: "🏠" },
-    { href: "#about", label: "About", icon: "👨‍💻" },
-    { href: "#projects", label: "Projects", icon: "🚀" },
-    { href: "#experience", label: "Experience", icon: "💼" },
-    { href: "#contact", label: "Contact", icon: "📬" },
+    { href: "#home", label: "Home", icon: "" },
+    { href: "#about", label: "About", icon: "" },
+    { href: "#projects", label: "Projects", icon: "" },
+    { href: "#experience", label: "Experience", icon: "" },
+    { href: "#contact", label: "Contact", icon: "" },
   ];
 
   const handleNavClick = (href) => {
@@ -197,9 +197,6 @@ const Nav = () => {
                     `}
                   >
                     <span className="relative z-10 flex items-center space-x-1 xl:space-x-1.5">
-                      <span className="text-xs xl:text-sm group-hover:scale-110 transition-transform duration-300">
-                        {item.icon}
-                      </span>
                       <span className="font-medium">{item.label}</span>
                     </span>
                     
