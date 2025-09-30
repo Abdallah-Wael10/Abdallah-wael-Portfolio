@@ -1,26 +1,27 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 
 export default function BitrixPage() {
   const [mounted, setMounted] = useState(false);
   const [bitrixData, setBitrixData] = useState(null);
-  const searchParams = useSearchParams();
 
   useEffect(() => {
     setMounted(true);
     
-    // استقبال البيانات من Bitrix إذا كانت موجودة
-    const domain = searchParams.get('DOMAIN');
-    const appSid = searchParams.get('APP_SID');
-    const authId = searchParams.get('AUTH_ID');
-    
-    if (domain || appSid || authId) {
-      setBitrixData({ domain, appSid, authId });
-      console.log('Bitrix Data:', { domain, appSid, authId });
+    // استقبال البيانات من Bitrix باستخدام window.location
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search);
+      const domain = urlParams.get('DOMAIN');
+      const appSid = urlParams.get('APP_SID');
+      const authId = urlParams.get('AUTH_ID');
+      
+      if (domain || appSid || authId) {
+        setBitrixData({ domain, appSid, authId });
+        console.log('Bitrix Data:', { domain, appSid, authId });
+      }
     }
-  }, [searchParams]);
+  }, []);
 
   if (!mounted) {
     return (
