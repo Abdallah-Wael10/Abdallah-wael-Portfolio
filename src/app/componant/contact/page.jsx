@@ -6,7 +6,7 @@ import github from "./image/githubb.svg";
 import linkedin from "./image/linked.svg"; 
 import back from "./image/back.jpg";
 import Image from "next/image";
-
+import Medium from "../../images/medium.webp";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -82,7 +82,7 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      href: "https://linkedin.com/@AhmadHassan",
+      href: "https://www.linkedin.com/in/ahmad-hassan-4850b9308?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
       icon: linkedin,
       label: "LinkedIn",
       color: "from-blue-600 to-blue-800",
@@ -90,7 +90,7 @@ const Contact = () => {
     },
     {
       href: "https://medium.com/@ahmedhasssann2003",
-      icon: github,
+      icon: Medium,
       label: "Medium",
       color: "from-emerald-600 to-emerald-800",
       hoverColor: "from-emerald-500 to-emerald-700"

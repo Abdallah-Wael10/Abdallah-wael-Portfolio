@@ -1,9 +1,9 @@
 "use client"
 import React, { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
-import Codule from "./images/codule.jpeg"
-import Egyweb from "./images/egyweb.jpeg"
-import Cultiv from "./images/cultiv.jpeg"
+import XCEED from "./images/xceed.jpeg"
+import Weinvoate from "./images/weInvote.jpeg"
+import HakTrack from "./images/haktrak.jpeg"
 
 const Experience = () => {
   const [visibleItems, setVisibleItems] = useState(new Set());
@@ -20,7 +20,7 @@ const Experience = () => {
       duration: "Feb 2026 - Present",
       period: "",
       location: "Hybrid",
-      logo: Cultiv,
+      logo: HakTrack,
       category: "current",
       description: "Expanded proactive threat hunting capabilities by using EDR and XDR platforms to investigate endpoint and network anomalies while improving detection coverage.",
       achievements: [
@@ -42,7 +42,7 @@ const Experience = () => {
       duration: "Sep 2025 - Oct 2025",
       period: "2 mos",
       location: "Cairo, Egypt",
-      logo: Egyweb,
+      logo: Weinvoate,
       category: "internship",
       description: "Gained intensive hands-on SOC operations experience in detection engineering, incident response, and automation workflows for security investigations.",
       achievements: [
@@ -64,7 +64,7 @@ const Experience = () => {
       duration: "Jun 2025 - Sep 2025",
       period: "4 mos",
       location: "Egypt",
-      logo: Codule,
+      logo: XCEED,
       category: "internship",
       description: "Supported enterprise security monitoring operations using IBM QRadar SIEM with strong focus on alert validation and operational escalation.",
       achievements: [

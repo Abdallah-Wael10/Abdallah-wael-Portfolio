@@ -2,14 +2,14 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Image from 'next/image'
 import lap from "../../images/lap.svg";
-import js from "../../images/js.svg";
-import nest from "../../images/nest.svg";
-import next from "../../images/next.svg";
-import mongo from "../../images/mongo.svg";
-import express from "../../images/express.svg";
-import react from "../../images/react.svg";
-import redux from "../../images/redux.svg";
-import tailwind from "../../images/tailwind.svg";
+import sentinel from "../../images/azure.webp";
+import defender from "../../images/defender.png";
+import qradar from "../../images/ibmqradar.png";
+import splunk from "../../images/Splunk.png";
+import elk from "../../images/elkstack.png";
+import n8n from "../../images/n8n.png";
+import cti from "../../images/cti.svg";
+import dfir from "../../images/DIFR.png";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -18,56 +18,56 @@ const About = () => {
 
   const techStack = [
     { 
-      src: react, 
+      src: sentinel, 
       alt: "Microsoft Sentinel", 
       name: "Microsoft Sentinel",
       category: "SIEM",
       color: "from-blue-400 to-cyan-500"
     },
     { 
-      src: next, 
+      src: defender, 
       alt: "Defender XDR", 
       name: "Defender XDR",
       category: "XDR",
       color: "from-gray-700 to-gray-900"
     },
     { 
-      src: tailwind, 
+      src: qradar, 
       alt: "IBM QRadar", 
       name: "IBM QRadar",
       category: "SIEM",
       color: "from-cyan-400 to-blue-500"
     },
     { 
-      src: js, 
+      src: splunk, 
       alt: "Splunk", 
       name: "Splunk",
       category: "SIEM",
       color: "from-yellow-400 to-orange-500"
     },
     { 
-      src: redux, 
+      src: elk, 
       alt: "ELK Stack", 
       name: "ELK Stack",
       category: "SIEM",
       color: "from-purple-500 to-purple-700"
     },
     { 
-      src: nest, 
+      src: n8n, 
       alt: "SOAR", 
       name: "SOAR Integration",
       category: "Automation",
       color: "from-red-500 to-pink-600"
     },
     { 
-      src: express, 
+      src: cti, 
       alt: "Threat Intelligence", 
       name: "CTI Operations",
       category: "Intelligence",
       color: "from-gray-600 to-gray-800"
     },
     { 
-      src: mongo, 
+      src: dfir, 
       alt: "DFIR", 
       name: "DFIR & Forensics",
       category: "Incident Response",
