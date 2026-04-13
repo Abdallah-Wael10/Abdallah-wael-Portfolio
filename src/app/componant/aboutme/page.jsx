@@ -19,60 +19,78 @@ const About = () => {
   const techStack = [
     { 
       src: react, 
-      alt: "React", 
-      name: "React",
-      category: "Frontend",
+      alt: "Microsoft Sentinel", 
+      name: "Microsoft Sentinel",
+      category: "SIEM",
       color: "from-blue-400 to-cyan-500"
     },
     { 
       src: next, 
-      alt: "Next.js", 
-      name: "Next.js",
-      category: "Framework",
+      alt: "Defender XDR", 
+      name: "Defender XDR",
+      category: "XDR",
       color: "from-gray-700 to-gray-900"
     },
     { 
       src: tailwind, 
-      alt: "Tailwind", 
-      name: "Tailwind",
-      category: "Styling",
+      alt: "IBM QRadar", 
+      name: "IBM QRadar",
+      category: "SIEM",
       color: "from-cyan-400 to-blue-500"
     },
     { 
       src: js, 
-      alt: "JavaScript", 
-      name: "JavaScript",
-      category: "Language",
+      alt: "Splunk", 
+      name: "Splunk",
+      category: "SIEM",
       color: "from-yellow-400 to-orange-500"
     },
     { 
       src: redux, 
-      alt: "Redux", 
-      name: "Redux",
-      category: "State Management",
+      alt: "ELK Stack", 
+      name: "ELK Stack",
+      category: "SIEM",
       color: "from-purple-500 to-purple-700"
     },
     { 
       src: nest, 
-      alt: "NestJS", 
-      name: "NestJS",
-      category: "Backend",
+      alt: "SOAR", 
+      name: "SOAR Integration",
+      category: "Automation",
       color: "from-red-500 to-pink-600"
     },
     { 
       src: express, 
-      alt: "Express", 
-      name: "Express",
-      category: "Backend",
+      alt: "Threat Intelligence", 
+      name: "CTI Operations",
+      category: "Intelligence",
       color: "from-gray-600 to-gray-800"
     },
     { 
       src: mongo, 
-      alt: "MongoDB", 
-      name: "MongoDB",
-      category: "Database",
+      alt: "DFIR", 
+      name: "DFIR & Forensics",
+      category: "Incident Response",
       color: "from-green-500 to-emerald-600"
     }
+  ];
+
+  const coreSkills = [
+    "Microsoft Sentinel",
+    "Defender XDR",
+    "IBM QRadar",
+    "Splunk",
+    "ELK Stack",
+    "SOAR",
+    "MITRE ATT&CK",
+    "Cyber Kill Chain",
+    "KQL",
+    "Wireshark",
+    "Windows Server",
+    "Entra ID",
+    "Active Directory",
+    "Python",
+    "Bash"
   ];
 
   useEffect(() => {
@@ -128,41 +146,52 @@ const About = () => {
                 <div className="flex items-center mb-6">
                   <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
                     Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                      Abdallah Wael
+                      Ahmed Mohamed Hassan
                     </span>
                   </h3>
                 </div>
                 
                 <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                  A passionate <span className="font-semibold text-blue-600">Web Developer</span> with 
-                  <span className="font-semibold text-purple-600"> 1+ years of experience</span> from Egypt, 
-                  based in Cairo.
+                  A dedicated <span className="font-semibold text-blue-600">SOC Analyst</span> focused on 
+                  <span className="font-semibold text-purple-600"> continuous monitoring, incident response, and threat hunting</span> in hybrid cloud and on-prem infrastructures.
                 </p>
                 
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <p className="text-gray-700 leading-relaxed">
-                      <span className="font-semibold">Frontend Specialist:</span> Expert in Next.js, React, and Tailwind CSS, 
-                      creating responsive, high-performance websites with clean, modern designs.
+                      <span className="font-semibold">SOC Operations:</span> Strong experience with Sentinel, Defender XDR, QRadar, Splunk, and ELK for log analysis, event triage, and rapid containment.
                     </p>
                   </div>
                   
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <p className="text-gray-700 leading-relaxed">
-                      <span className="font-semibold">Full-Stack Knowledge:</span> Solid understanding of backend 
-                      development with Node.js, Express, NestJS, and MongoDB.
+                      <span className="font-semibold">CTI and DFIR:</span> Uses threat intelligence frameworks, forensic workflows, and deep endpoint/network telemetry analysis to improve detection quality.
                     </p>
                   </div>
                   
                   <div className="flex items-start">
                     <div className="w-2 h-2 bg-pink-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <p className="text-gray-700 leading-relaxed">
-                      <span className="font-semibold">Growth Mindset:</span> Quick learner who adapts to new technologies 
-                      and delivers user-friendly experiences with thorough testing.
+                      <span className="font-semibold">Infrastructure Security:</span> Hands-on with Windows Server, Entra ID, Active Directory hardening, and secure domain operations.
                     </p>
                   </div>
+                </div>
+
+                <div className="mt-6 p-4 rounded-2xl bg-gray-50 border border-gray-100 space-y-3">
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <span className="font-semibold">Education:</span> Bachelor of Information Systems, Modern Academy for Engineering and Computer Science (2022-2026).
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <span className="font-semibold">Certifications:</span> eCTHP, eCIRv2, CTIGA, CPPS, SOC Professional Diploma (IT Gate Academy), SEC450-GSOC, and Python Programming Basics.
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <span className="font-semibold">Languages:</span> Arabic (Native) and English (Proficient).
+                  </p>
+                  <p className="text-gray-700 text-sm leading-relaxed">
+                    <span className="font-semibold">Soft Skills:</span> Analytical thinking, problem-solving, team collaboration, incident communication, and continuous learning.
+                  </p>
                 </div>
 
               </div>
@@ -183,7 +212,7 @@ const About = () => {
                 <div className="relative overflow-hidden rounded-2xl">
                   <Image 
                     src={lap} 
-                    alt='Professional Developer Setup' 
+                    alt='SOC monitoring and threat detection workspace' 
                     className='w-full h-auto transform group-hover:scale-105 transition-transform duration-700 ease-out'
                     width={600}
                     height={400}
@@ -205,11 +234,27 @@ const About = () => {
           
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              My <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Tech Stack</span>
+              My <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Security Stack</span>
             </h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Technologies and tools I use to bring ideas to life
+              Platforms and frameworks I use for advanced detection and response
             </p>
+          </div>
+
+          <div className="mb-10">
+            <h4 className="text-xl md:text-2xl font-bold text-gray-900 text-center mb-4">
+              Core Security Skills
+            </h4>
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
+              {coreSkills.map((skill) => (
+                <span
+                  key={skill}
+                  className="px-3 py-2 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-700 shadow-sm"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 sm:gap-6">

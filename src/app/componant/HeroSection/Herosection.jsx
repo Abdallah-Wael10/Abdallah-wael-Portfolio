@@ -11,7 +11,7 @@ import tailwind from "../../images/tailwind.svg";
 import css from "../../images/css.svg";
 import HeroSvg from "../../images/hero.svg";
 import Image from 'next/image';
-import github from "../../images/gh.svg";
+import linkedin from "../../componant/contact/image/linked.svg";
 import camera from "../../images/cam.svg";
 
 const Herosection = () => {
@@ -195,7 +195,7 @@ const Herosection = () => {
           <span className={`text-gray-600 text-lg sm:text-xl md:text-2xl font-medium mb-3 sm:mb-4 transition-all duration-1000 ease-out
                            ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
                 style={{ animationDelay: '500ms' }}>
-            Welcome to my  portfolio 👋
+            Welcome to my cybersecurity portfolio 👋
           </span>
           
           {/* Enhanced Name and Title */}
@@ -203,7 +203,7 @@ const Herosection = () => {
                          ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
               style={{ animationDelay: '700ms' }}>
             I'm <span className="text-black bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 bg-clip-text text-transparent animate-pulse">
-              Abdallah Wael
+              Ahmed Mohamed Hassan
             </span>
           </h1>
 
@@ -213,11 +213,11 @@ const Herosection = () => {
                style={{ animationDelay: '850ms' }}>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-2">
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Frontend Developer
+                SOC Analyst
               </span>
             </h2>
             <p className="text-lg sm:text-xl md:text-2xl text-blue-600 font-semibold">
-              with Solid Backend Understanding
+              Threat Detection, Incident Response, and Threat Hunting
             </p>
           </div>
           
@@ -225,11 +225,11 @@ const Herosection = () => {
           <p className={`text-gray-600 text-base sm:text-lg md:text-xl font-light max-w-4xl leading-relaxed mb-6 sm:mb-8 transition-all duration-1000 ease-out
                         ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
              style={{ animationDelay: '900ms' }}>
-            I specialize in crafting exceptional digital experiences through modern web technologies. 
+            Dedicated SOC Analyst specializing in continuous security monitoring across hybrid on-premises and cloud environments.
             <br className="hidden sm:block" />
-            My expertise spans <span className="font-semibold text-blue-600">React.js, Next.js, TypeScript,</span> and contemporary development practices, 
+            Proficient with <span className="font-semibold text-blue-600">Microsoft Sentinel, Defender XDR, IBM QRadar, Splunk, ELK, and SOAR</span> for advanced event triage and response,
             <br className="hidden sm:block" />
-            delivering scalable, user-centered solutions that drive business growth.
+            backed by strong foundations in DFIR, CTI, Entra ID, AD security, and Windows Server hardening.
           </p>
           
           {/* Action Buttons with responsive sizing */}
@@ -240,9 +240,9 @@ const Herosection = () => {
                              border border-gray-200 overflow-hidden transition-all duration-300 
                              hover:shadow-2xl hover:scale-105 hover:-translate-y-1 w-full sm:w-auto'>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-              <a href="https://github.com/Abdallah-Wael10" target="_blank" className="relative flex items-center justify-center gap-2 z-10">
-                <Image src={github} alt="GitHub" width={20} height={20} className="sm:w-6 sm:h-6 transition-transform duration-300 group-hover:rotate-12" />
-                <span className="group-hover:text-blue-600 transition-colors duration-300">View GitHub</span>
+              <a href="https://linkedin.com/@AhmadHassan" target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center gap-2 z-10">
+                <Image src={linkedin} alt="LinkedIn" width={20} height={20} className="sm:w-6 sm:h-6 transition-transform duration-300 group-hover:rotate-12" />
+                <span className="group-hover:text-blue-600 transition-colors duration-300">View LinkedIn</span>
               </a>
             </button>
             

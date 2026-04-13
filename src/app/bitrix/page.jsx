@@ -52,7 +52,7 @@ export default function BitrixPage() {
           display: "block",
           marginTop: bitrixData ? "40px" : "0"
         }}
-        title="Abdallah Wael Portfolio"
+        title="Ahmed Mohamed Hassan Portfolio"
         allowFullScreen
         sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
       />

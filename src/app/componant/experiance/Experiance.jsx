@@ -4,7 +4,6 @@ import Image from 'next/image'
 import Codule from "./images/codule.jpeg"
 import Egyweb from "./images/egyweb.jpeg"
 import Cultiv from "./images/cultiv.jpeg"
-import freeLance from "./images/free.png"
 
 const Experience = () => {
   const [visibleItems, setVisibleItems] = useState(new Set());
@@ -15,104 +14,76 @@ const Experience = () => {
   const experienceData = [
     {
       id: 1,
-      company: "Cultiv Bureau",
-      position: "Frontend Developer",
-      type: "Full-time",
-      duration: "Aug 2025 - Present",
+      company: "HakTrack Networks",
+      position: "Cybersecurity Analyst Trainee",
+      type: "Trainee",
+      duration: "Feb 2026 - Present",
       period: "",
-      location: "Office",
+      location: "Hybrid",
       logo: Cultiv,
       category: "current",
-      description: "Currently working as a full-time Frontend Developer, specializing in React.js and Next.js applications. Contributing to systems , campaigns, landing pages, and innovative user interfaces. Also providing backend support with Node.js when required.",
+      description: "Expanded proactive threat hunting capabilities by using EDR and XDR platforms to investigate endpoint and network anomalies while improving detection coverage.",
       achievements: [
-        "Developed comprehensive HR management system (Workhole HRM) with employee management, payroll, and reporting modules",
-        "Built advanced CRM systems with customer relationship tracking, sales pipeline management, and analytics dashboards",
-        "Created interactive chatbot campaign systems with AI-powered customer engagement and lead generation",
-        "Designed and developed responsive landing pages with modern UI/UX and conversion optimization",
-        "Built comprehensive admin dashboards with real-time analytics, data visualization, and reporting features",
-        "Collaborated with cross-functional teams on product development and agile methodologies",
-        "Provided Node.js backend support and API integration for various client projects"
+        "Expanded proactive threat hunting using EDR and XDR investigations",
+        "Integrated actionable threat intelligence to map attacker behavior and improve response times",
+        "Performed web vulnerability assessments and penetration testing to harden enterprise assets",
+        "Correlated endpoint, network, and identity events for faster incident triage"
       ],
-      technologies: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Material UI", "Node.js", "JavaScript", "Nest.js"],
+      technologies: ["Defender XDR", "EDR", "Threat Intelligence", "Incident Response", "Web Security Testing"],
       color: "from-blue-600 to-cyan-600",
       bgColor: "from-blue-50 to-cyan-50",
       iconColor: "text-blue-600"
     },
     {
       id: 2,
-      company: "EGYWEB",
-      position: "Full Stack Developer",
+      company: "WE INNOVATE Scholarship - Cairo University",
+      position: "SOC Analyst Intern",
       type: "Internship",
-      duration: "Feb 2025 - Apr 2025",
-      period: "3 mos",
+      duration: "Sep 2025 - Oct 2025",
+      period: "2 mos",
       location: "Cairo, Egypt",
       logo: Egyweb,
       category: "internship",
-      description: "Worked as a Full-Stack Developer intern, building a fully dynamic website using Next.js and Tailwind CSS for the frontend, with Express.js and MongoDB for the backend. Gained extensive experience in full-stack development and API integration.",
+      description: "Gained intensive hands-on SOC operations experience in detection engineering, incident response, and automation workflows for security investigations.",
       achievements: [
-       "Built complete full-stack web applications from scratch",
-        "Developed RESTful APIs using Express.js and MongoDB",
-        "Implemented dynamic content management systems",
-        "Collaborated with senior developers on real client projects",
-        "Learned agile development methodologies"
+        "Built and tuned detection rules with practical log analysis",
+        "Used ELK Stack to investigate security events and enrich context",
+        "Applied SOAR workflows to automate alert triage and repetitive investigation steps",
+        "Reduced false positives by combining raw logs with threat intelligence feeds"
       ],
-      technologies: ["Next.js", "Express.js", "MongoDB", "Tailwind CSS", "Node.js", "REST APIs"],
+      technologies: ["ELK Stack", "SOAR", "Detection Engineering", "Threat Intelligence", "Incident Response"],
       color: "from-green-600 to-emerald-600",
       bgColor: "from-green-50 to-emerald-50",
       iconColor: "text-green-600"
     },
     {
       id: 3,
-      company: "Codule",
-      position: "Frontend Developer",
+      company: "XCEED Company",
+      position: "Information Security Intern",
       type: "Internship",
-      duration: "Apr 2024 - May 2024",
-      period: "2 mos",
-      location: "Remote",
+      duration: "Jun 2025 - Sep 2025",
+      period: "4 mos",
+      location: "Egypt",
       logo: Codule,
       category: "internship",
-      description: "Worked as a frontend developer during a one-month internship, where I gained hands-on experience in modern frontend technologies and collaborative development practices.",
+      description: "Supported enterprise security monitoring operations using IBM QRadar SIEM with strong focus on alert validation and operational escalation.",
       achievements: [
-        "Developed responsive user interfaces using React.js",
-        "Collaborated with design team to implement pixel-perfect designs",
-        "Gained experience in version control and team workflows",
-        "Participated in code reviews and team meetings"
+        "Monitored enterprise dashboards and triaged incoming alerts in QRadar",
+        "Performed detailed log analysis to detect anomalies and policy violations",
+        "Distinguished true positive incidents from false positives for efficient escalation",
+        "Supported incident response workflows and digital evidence gathering"
       ],
-      technologies: ["React.js", "CSS3", "JavaScript", "HTML5", "Git"],
+      technologies: ["IBM QRadar", "Log Analysis", "Alert Triage", "Digital Forensics", "Incident Response"],
       color: "from-purple-600 to-pink-600",
       bgColor: "from-purple-50 to-pink-50",
       iconColor: "text-purple-600"
-    },
-    {
-      id: 4,
-      company: "Freelance Developer",
-      position: "Full Stack Developer",
-      type: "Freelance",
-      duration: "Jan 2024 - Present",
-      period: "12+ mos",
-      location: "Remote",
-      logo: freeLance,
-      category: "freelance",
-      description: "Working as an independent freelance developer, delivering custom web solutions for various clients. Specializing in modern web technologies and providing end-to-end development services.",
-      achievements: [
-        "Successfully completed 15+ client projects",
-        "Built custom e-commerce solutions and portfolios",
-        "Developed CRM and ERP systems for small businesses",
-        "Maintained long-term client relationships with 100% satisfaction rate",
-        "Managed projects from concept to deployment"
-      ],
-      technologies: ["Next.js", "React.js", "Node.js", "Express.js", "Nest.js", "MongoDB", "Tailwind CSS"],
-      color: "from-orange-600 to-red-600",
-      bgColor: "from-orange-50 to-red-50",
-      iconColor: "text-orange-600"
     }
   ];
 
   const filters = [
     { key: 'all', label: 'All Experience' },
     { key: 'current', label: 'Current Role' },
-    { key: 'internship', label: 'Internships' },
-    { key: 'freelance', label: 'Freelance' }
+    { key: 'internship', label: 'Internships' }
   ];
 
   const filteredData = activeFilter === 'all' 
@@ -409,7 +380,7 @@ const Experience = () => {
           {/* Enhanced Title - Responsive text sizes */}
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black mb-6 sm:mb-8 md:mb-10">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient">
-              Work
+              Security
             </span>
             <br />
             <span className="text-gray-800">Experience</span>
@@ -417,9 +388,9 @@ const Experience = () => {
 
           {/* Enhanced Subtitle - Responsive */}
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light mb-8 sm:mb-12 px-4">
-            My professional journey through innovative companies and challenging projects,
+            Hands-on SOC and information security journey across enterprise monitoring and detection engineering,
             <br className="hidden sm:block" />
-            <span className="text-blue-600 font-medium">building expertise across the full stack.</span>
+            <span className="text-blue-600 font-medium">with practical SIEM, SOAR, CTI, and incident response execution.</span>
           </p>
 
           {/* Filter Buttons - Responsive grid */}
@@ -443,9 +414,9 @@ const Experience = () => {
           {/* Enhanced Stats - Responsive grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-4xl mx-auto">
             {[
-              { value: "2+", label: "Years Experience", color: "from-blue-600 to-purple-600", icon: "⏱️" },
-              { value: "4", label: "Companies", color: "from-green-600 to-emerald-600", icon: "🏢" },
-              { value: "15+", label: "Projects", color: "from-orange-600 to-red-600", icon: "🚀" },
+              { value: "3", label: "Security Roles", color: "from-blue-600 to-purple-600", icon: "⏱️" },
+              { value: "5+", label: "SIEM/XDR Tools", color: "from-green-600 to-emerald-600", icon: "🛡️" },
+              { value: "4", label: "Security Projects", color: "from-orange-600 to-red-600", icon: "🚀" },
               
             ].map((stat, index) => (
               <div 
@@ -487,10 +458,10 @@ const Experience = () => {
             
             <div className="relative z-10">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">
-                Ready to Start Your Project?
+                Ready to Strengthen Your Security Posture?
               </h3>
               <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto">
-                Let&apos;s collaborate and bring your vision to life with cutting-edge technology and innovative solutions.
+                Let&apos;s collaborate to improve visibility, accelerate response, and reduce risk with resilient SOC operations.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
@@ -505,7 +476,7 @@ const Experience = () => {
                 </a>
                 
                 <a 
-                  href="mailto:abdallahwael558@gmail.com" 
+                  href="mailto:ahmedhasssann2003@gmail.com" 
                   className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white/10 text-white rounded-xl sm:rounded-2xl font-semibold hover:bg-white/20 backdrop-blur-sm transition-all duration-200 border border-white/20 text-sm sm:text-base"
                 >
                   <svg className="w-4 sm:w-5 h-4 sm:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

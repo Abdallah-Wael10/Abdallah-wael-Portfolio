@@ -1,24 +1,10 @@
 "use client"
 import React, { useState, useEffect, useMemo } from 'react'
 import Card from '../card/page'
-import crm from "./images/crmm.jpg"
-import Devfux from "./images/devfux.jpg"
-import burger from "./images/burger.jpg"
-import realstate from "./images/realstate.jpg"
-import hyber from "./images/hyber.jpg"
-import powercem1 from "./images/powercembg.jpg"
-import adam from "./images/adambg.jpg"
-import bedo from "./images/bedobg.jpg"
-import sneek from "./images/sneekbg.jpg"
-import powercem2 from "./images/powercembg2.jpg"
-
-// new images for projects
 import NewCrm from "./images/new/crm.jpg"
 import NewErp from "./images/new/erp.jpg"
-import KhaledElGmaal from "./images/new/khaled.png"
 import Rawafi from "./images/new/rawafi.png"
 import Workhole from "./images/new/workhole.jpg"
-import ChatbotCampaign from "./images/new/chatbot.png"
 
 const Project = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -27,230 +13,52 @@ const Project = () => {
   // Move data outside component or use useMemo to prevent recreation
   const data = useMemo(() => [
     {
-      title: "Workhole HR System",
-      desc: "A comprehensive HR system for time tracking with full frontend implementation and MVP backend development. Features employee management, time tracking, and reporting capabilities.",
+      title: "Secure Infrastructure & Domain Architecture",
+      desc: "Designed a secure AD DS architecture with parent/child domains and structured OUs, enforced hardening with GPOs and NTFS least privilege, implemented secure file sharing with quotas and VSS, and configured DNS, DHCP, and VPN for resilient remote operations.",
       image: Workhole,
-      status: "Private",
-      category: "Full Stack",
-      tech: ["React", "Node.js", "MongoDB"],
+      status: "Public",
+      category: "Infrastructure Security",
+      tech: ["Active Directory", "GPO", "Windows Server", "DNS/DHCP", "VPN"],
       github: "",
       live: "",
       featured: true
     },
     {
-      title: "Rawafi Project Dashboard",
-      desc: "Integration project between frontend and backend for Rawafi company, featuring a comprehensive dashboard with real-time data visualization and management tools.",
+      title: "Automated Threat Detection and Windows Log Forensics",
+      desc: "Engineered an incident response workflow to parse Sysmon, Security, and Application logs using wevtutil and EvtxECmd, reconstructed attacker behavior with timeline analysis, and accelerated triage with Chainsaw and Sigma-based detections.",
       image: Rawafi,
-      status: "Private",
-      category: "Frontend",
-      tech: ["Next.js", "Express.js", "PostgreSQL"],
+      status: "Public",
+      category: "DFIR",
+      tech: ["Sysmon", "EvtxECmd", "Timeline Explorer", "Chainsaw", "Sigma"],
       github: "",
       live: "",
       featured: true
     },
     {
-      title: "Cultiv Bureau Chatbot",
-      desc: "An intelligent chatbot campaign system developed for Cultiv Bureau, featuring automated responses, lead generation, and customer engagement tools.",
-      image: ChatbotCampaign,
-      status: "Private",
-      category: "Frontend",
-      tech: ["React", "Node.js", "AI/ML"],
-      github: "",
-      live: "https://cultiv-landing-page.vercel.app/",
-      featured: true
-    },
-    {
-      title: "Khaled El Gmaal Backend",
-      desc: "Backend API development for a luxury company in Khan El Khalili, featuring secure authentication, product management, and order processing systems.",
-      image: KhaledElGmaal,
-      status: "Private",
-      category: "Backend",
-      tech: ["Node.js", "Express.js", "MongoDB"],
-      github: "",
-      live: "",
-      featured: false
-    },
-    {
-      title: "Khaled El Gmaal Frontend",
-      desc: "Responsive frontend application for a luxury goods company, featuring dynamic data rendering, modern UI/UX design, and full mobile optimization.",
-      image: KhaledElGmaal,
-      status: "Private",
-      category: "Full Stack",
-
-      tech: ["Next.js", "Tailwind CSS", "TypeScript"],
-      github: "",
-      live: "",
-      featured: true
-    },
-    {
-      title: "ERP Frontend System",
-      desc: "Modern ERP frontend built with Next.js and Tailwind CSS for skill enhancement, featuring modular components and responsive design patterns.",
+      title: "Azure Arc & Sentinel Hybrid Cloud Integration",
+      desc: "Configured DCR-driven AMA deployment for cloud VMs, onboarded on-prem Windows Servers via Azure Arc, validated telemetry with KQL, and built a custom CSV ingestion pipeline using DCE and PowerShell scripts.",
       image: NewErp,
       status: "Public",
-      category: "Full Stack",
-
-      tech: ["Next.js", "Tailwind CSS", "React"],
-      github: "https://github.com/Abdallah-Wael10/ERP-Frontend",
-      live: "https://erp-frontend-demo.vercel.app",
-      featured: false
+      category: "Cloud Security",
+      tech: ["Azure Arc", "Microsoft Sentinel", "AMA", "KQL", "PowerShell"],
+      github: "",
+      live: "",
+      featured: true
     },
     {
-      title: "CRM Backend API",
-      desc: "RESTful API backend for CRM system built with NestJS and MongoDB, featuring authentication, CRUD operations, and data validation.",
+      title: "Enterprise SIEM Deployment & Analytics (IBM QRadar)",
+      desc: "Architected SIEM telemetry ingestion with WinCollect and rsyslog across Windows and Linux, engineered custom DSM/QID mappings with regex parsing, and authored advanced event/flow correlation rules with dynamic reference sets.",
       image: NewCrm,
       status: "Public",
-      category: "Backend",
-      tech: ["NestJS", "MongoDB", "TypeScript"],
-      github: "https://github.com/Abdallah-Wael10/crm-backend-nest.js",
-      live: "",
-      featured: false
-    },
-    {
-      title: "ERP Backend API",
-      desc: "Scalable backend API for ERP system using NestJS and MongoDB, implementing business logic, user management, and data processing.",
-      image: NewErp,
-      status: "Public",
-      category: "Backend",
-      tech: ["NestJS", "MongoDB", "JWT"],
-      github: "https://github.com/Abdallah-Wael10/ERP-backend",
-      live: "",
-      featured: false
-    },
-    {
-      title: "CRM Frontend Dashboard",
-      desc: "Interactive CRM dashboard built with Next.js and Tailwind CSS, featuring data visualization, customer management, and responsive design.",
-      image: NewCrm,
-      status: "Public",
-      category: "Full Stack",
-      tech: ["Next.js", "Tailwind CSS", "Chart.js"],
-      github: "https://github.com/Abdallah-Wael10/Crm-Frontend",
-      live: "",
-      featured: false
-    },
-    {
-      title: "Powercem Agency Website",
-      desc: "Professional website for Powercem Agency developed during EgyWeb company internship, featuring dynamic content management and full responsiveness.",
-      image: powercem1,
-      status: "Private",
-      category: "Frontend",
-      tech: ["Next.js", "Tailwind CSS", "CMS"],
+      category: "SIEM Engineering",
+      tech: ["IBM QRadar", "WinCollect", "rsyslog", "Regex", "Correlation Rules"],
       github: "",
       live: "",
-      featured: false
-    },
-    {
-      title: "Devfux Agency Platform",
-      desc: "Complete agency platform with admin panel for Devfux Agency. Features JWT authentication, cookie management, and client website showcase.",
-      image: Devfux,
-      status: "Public",
-      category: "Full Stack",
-      tech: ["Next.js", "Express.js", "JWT"],
-      github: "https://github.com/Abdallah-Wael10/devfux-frontend",
-      live: "https://devfux-frontend.vercel.app",
-      featured: false
-    },
-    {
-      title: "Powercem Backend API",
-      desc: "Backend infrastructure for Powercem Agency using Express.js and MongoDB, handling dynamic content delivery and data management.",
-      image: powercem2,
-      status: "Private",
-      category: "Backend",
-      tech: ["Express.js", "MongoDB", "Node.js"],
-      github: "",
-      live: "",
-      featured: false
-    },
-    {
-      title: "Adam Wael Portfolio",
-      desc: "Professional portfolio website showcasing skills and projects, built with Next.js and Tailwind CSS with full responsive design.",
-      image: adam,
-      status: "Public",
-      category: "Frontend",
-      tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/Abdallah-Wael10/Adam-wael-Portfolio",
-      live: "https://adamwael-portfolio.vercel.app/",
-      featured: false
-    },
-    {
-      title: "Abdallah Wael Portfolio",
-      desc: "Personal portfolio website showcasing my development journey, projects, and technical skills with modern design and smooth animations.",
-      image: bedo,
-      status: "Public",
-      category: "Frontend",
-      tech: ["Next.js", "Tailwind CSS", "CSS Animations"],
-      github: "https://github.com/Abdallah-Wael10/Abdallah-wael-Portfolio",
-      live: "https://abdallah-wael-portfolio.vercel.app/",
-      featured: false
-    },
-    {
-      title: "Devfux Backend API",
-      desc: "Backend service for Devfux Agency platform using Express.js and MongoDB, implementing JWT authentication and content management.",
-      image: Devfux,
-      status: "Public",
-      category: "Backend",
-      tech: ["Express.js", "MongoDB", "JWT"],
-      github: "https://github.com/Abdallah-Wael10/devfux-backend",
-      live: "",
-      featured: false
-    },
-    {
-      title: "Mini CRM System",
-      desc: "Customer relationship management system for car protection company, featuring sales pipeline management and customer tracking.",
-      image: crm,
-      status: "Private",
-      category: "Full Stack",
-      tech: ["Next.js", "CSS", "Node.js"],
-      github: "",
-      live: "",
-      featured: false
-    },
-    {
-      title: "Burger Maker App",
-      desc: "Interactive burger customization app built with vanilla JavaScript, featuring dynamic ingredient selection and responsive mobile design.",
-      image: burger,
-      status: "Public",
-      category: "Frontend",
-      tech: ["JavaScript", "HTML", "CSS"],
-      github: "https://github.com/Abdallah-Wael10/Burger-Maker-Javascript",
-      live: "https://burger-maker-pure-javascriptt-ewx5eic13.vercel.app/",
-      featured: false
-    },
-    {
-      title: "Real Estate Landing Page",
-      desc: "Modern real estate landing page with advertising section, built using Next.js and Tailwind CSS with mobile-responsive design.",
-      image: realstate,
-      status: "Public",
-      category: "Frontend",
-      tech: ["Next.js", "Tailwind CSS", "Responsive"],
-      github: "https://github.com/Abdallah-Wael10/Realstate-with-ads-landing-page-resp-on-mobile",
-      live: "https://realstate-with-ads-landing-page-resp-on-mobile.vercel.app/",
-      featured: false
-    },
-    {
-      title: "Sneakers Landing Page",
-      desc: "Clean and modern sneakers showcase landing page featuring product displays and mobile-optimized responsive design.",
-      image: sneek,
-      status: "Public",
-      category: "Frontend",
-      tech: ["Next.js", "Tailwind CSS", "Mobile-First"],
-      github: "https://github.com/Abdallah-Wael10/Sneakers-Landing-Page-only-responsive-on-mobile-",
-      live: "https://sneakers-landing-page-only-responsive-on-mobile.vercel.app/",
-      featured: false
-    },
-    {
-      title: "Hyber Auto Platform",
-      desc: "Car buying and selling platform with responsive dashboard, built with Next.js and CSS. My first real-world project experience.",
-      image: hyber,
-      status: "Private",
-      category: "Full Stack",
-      tech: ["Next.js", "CSS", "Dashboard"],
-      github: "",
-      live: "",
-      featured: false
+      featured: true
     }
   ], []); // Empty dependency array since data is static
 
-  const categories = useMemo(() => ['all', 'Frontend', 'Backend', 'Full Stack'], []);
+  const categories = useMemo(() => ['all', ...new Set(data.map(project => project.category))], [data]);
   
   const publicProjects = useMemo(() => data.filter(project => project.status === 'Public'), [data]);
   const privateProjects = useMemo(() => data.filter(project => project.status === 'Private'), [data]);
@@ -283,13 +91,13 @@ const Project = () => {
             {/* Badge */}
             <div className="inline-flex items-center px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-indigo-100 shadow-lg mb-6">
               <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
-              <span className="text-sm font-medium text-gray-700">Portfolio 2024</span>
+              <span className="text-sm font-medium text-gray-700">Cybersecurity Portfolio</span>
             </div>
 
             {/* Main Title */}
             <h1 className='text-6xl md:text-7xl lg:text-8xl font-black mb-8'>
               <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient">
-                Featured
+                Security
               </span>
               <br />
               <span className="text-gray-800">Projects</span>
@@ -297,9 +105,9 @@ const Project = () => {
 
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
-              Crafting digital experiences that blend innovation with functionality. 
+              Building practical security solutions that improve detection, response, and resilience.
               <br className="hidden md:block" />
-              <span className="text-indigo-600 font-medium">From concept to deployment.</span>
+              <span className="text-indigo-600 font-medium">From architecture to operational analytics.</span>
             </p>
 
             {/* Metrics Dashboard */}
@@ -342,7 +150,7 @@ const Project = () => {
               ✨ Featured Work
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Highlighted projects that showcase my best work and technical expertise
+              Highlighted cybersecurity projects covering DFIR, SIEM engineering, and cloud security integration
             </p>
           </div>
           

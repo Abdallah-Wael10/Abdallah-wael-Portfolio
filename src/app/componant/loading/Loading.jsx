@@ -15,10 +15,10 @@ const Loading = () => {
       {/* Branding */}
       <div className="text-center space-y-4">
         <div className="text-3xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-          Abdallah Wael
+          Ahmed Mohamed Hassan
         </div>
         <p className="text-gray-400 text-sm">
-          Frontend Developer
+          SOC Analyst
         </p>
         <div className="text-blue-400 text-sm animate-pulse">
           Loading...

@@ -82,18 +82,18 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      href: "https://github.com/Abdallah-Wael10",
-      icon: github,
-      label: "GitHub",
-      color: "from-gray-700 to-gray-900",
-      hoverColor: "from-gray-600 to-gray-800"
-    },
-    {
-      href: "https://www.linkedin.com/in/abdallah-wael-01a443301/?trk=public-profile-join-page",
+      href: "https://linkedin.com/@AhmadHassan",
       icon: linkedin,
       label: "LinkedIn",
       color: "from-blue-600 to-blue-800",
       hoverColor: "from-blue-500 to-blue-700"
+    },
+    {
+      href: "https://medium.com/@ahmedhasssann2003",
+      icon: github,
+      label: "Medium",
+      color: "from-emerald-600 to-emerald-800",
+      hoverColor: "from-emerald-500 to-emerald-700"
     }
   ];
 
@@ -149,9 +149,9 @@ const Contact = () => {
 
             {/* Description */}
             <p className="text-xl md:text-2xl leading-relaxed mb-12 text-gray-200">
-              Ready to bring your ideas to life? Let's discuss your project and create something amazing together.
+              I am open to SOC Analyst opportunities where I can contribute to detection engineering, incident response, and threat hunting operations.
               <br className="hidden md:block" />
-              <span className="text-blue-400 font-medium">I'd love to hear from you!</span>
+              <span className="text-blue-400 font-medium">Let's connect and discuss security challenges.</span>
             </p>
 
             {/* Contact Info */}
@@ -162,7 +162,17 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-gray-300 text-sm">Email</p>
-                  <p className="text-white font-medium">abdallahwael844@gmail.com</p>
+                  <p className="text-white font-medium">ahmedhasssann2003@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                  <span className="text-xl">📱</span>
+                </div>
+                <div>
+                  <p className="text-gray-300 text-sm">Phone</p>
+                  <p className="text-white font-medium">01277251911</p>
                 </div>
               </div>
               
@@ -209,7 +219,7 @@ const Contact = () => {
                 {/* Form Header */}
                 <div className="text-center mb-8">
                   <h3 className="text-3xl font-bold text-gray-800 mb-2">Send Message</h3>
-                  <p className="text-gray-600">Fill out the form below and I'll get back to you soon!</p>
+                  <p className="text-gray-600">Fill out the form and I will respond as soon as possible.</p>
                 </div>
 
                 {/* Status Messages */}
